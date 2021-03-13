@@ -30,8 +30,8 @@ $(document).ready(function(){
                 clickedSpan.off("click");
                 progressBar();
             }
-            $("p#clicksLeft").text(`Number of Clicks Left: ${numOfClicks}`);
-            $("p#remainingBones").text(`Number of Bones found!: ${numOfBones}`);
+            $("p#clicksLeft").text(`Clicks Left: ${numOfClicks}`);
+            $("p#remainingBones").text(`Bones found: ${numOfBones}`);
             numOfClicks--;
         }
 
@@ -94,9 +94,9 @@ $(document).ready(function(){
         square.off("click");
         if(numOfBones === 5)
         {
-            $("p#Message").text(`YAY! You found all the Bones!`);
+            $("p#Message").text(`You found all the Bones!`);
         }else{
-            $("p#Message").text(`BAD BOY! GET OFF MY LAWN!`);
+            $("p#Message").text(`SHOO SHOO! GET OFF MY LAWN!`);
         }
 
     }
